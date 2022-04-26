@@ -12,7 +12,8 @@
       "uRI" : "CIMPATH=Map/3313c8c42fa9433fab69b203f16813e2.xml",
       "sourceURI" : "0d2a188813274a3e9d4afbab8cff6213",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
       "useSourceMetadata" : true,
       "layerElevation" : {
@@ -35,7 +36,7 @@
             "refreshRateUnit" : "esriTimeUnitsSeconds",
             "rowSpan" : 1,
             "columnSpan" : 1,
-            "text" : "<div><p><span>ID: {TARGET_FID}</span></p><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>Type: {type}</span></p><p><span>County: {County}</span></p></div>"
+            "text" : "<div><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>Type: {type}</span></p><p><span>County: {County}</span></p></div>"
           }
         ],
         "gridLayout" : {
@@ -79,33 +80,19 @@
               "roundingValue" : 0
             },
             "readOnly" : true,
-            "visible" : true,
+            "visible" : false,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "TARGET_FID",
-            "fieldName" : "TARGET_FID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "osm_id",
+            "alias" : "OSM ID",
             "fieldName" : "osm_id",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "code",
+            "alias" : "Code",
             "fieldName" : "code",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
@@ -119,21 +106,21 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "fclass",
+            "alias" : "Class",
             "fieldName" : "fclass",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "name",
+            "alias" : "Name",
             "fieldName" : "name",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "type",
+            "alias" : "Type",
             "fieldName" : "type",
             "visible" : true,
             "searchMode" : "Exact"
@@ -157,7 +144,7 @@
               "roundingValue" : 6
             },
             "readOnly" : true,
-            "visible" : true,
+            "visible" : false,
             "searchMode" : "Exact"
           },
           {
@@ -172,14 +159,15 @@
               "roundingValue" : 6
             },
             "readOnly" : true,
-            "visible" : true,
+            "visible" : false,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
             "alias" : "Shape",
             "fieldName" : "Shape",
-            "visible" : true,
+            "readOnly" : true,
+            "visible" : false,
             "searchMode" : "Exact"
           }
         ],
@@ -5931,7 +5919,8 @@
       "uRI" : "CIMPATH=Map/e3473a134594427596c63da97143bd42.xml",
       "sourceURI" : "0d2a188813274a3e9d4afbab8cff6213",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
       "useSourceMetadata" : true,
       "layerElevation" : {
@@ -5953,7 +5942,7 @@
             "refreshRateUnit" : "esriTimeUnitsSeconds",
             "rowSpan" : 1,
             "columnSpan" : 1,
-            "text" : "<div><p><span>ID: {TARGET_FID}</span></p><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>Type: {type}</span></p><p><span>County: {County}</span></p></div>"
+            "text" : "<div><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
           }
         ],
         "gridLayout" : {
@@ -5997,33 +5986,19 @@
               "roundingValue" : 0
             },
             "readOnly" : true,
-            "visible" : true,
+            "visible" : false,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "TARGET_FID",
-            "fieldName" : "TARGET_FID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "osm_id",
+            "alias" : "OSM ID",
             "fieldName" : "osm_id",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "code",
+            "alias" : "Code",
             "fieldName" : "code",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
@@ -6037,14 +6012,14 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "fclass",
+            "alias" : "Class",
             "fieldName" : "fclass",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "name",
+            "alias" : "Name",
             "fieldName" : "name",
             "visible" : true,
             "searchMode" : "Exact"
@@ -6060,7 +6035,7 @@
             "type" : "CIMFieldDescription",
             "alias" : "Shape",
             "fieldName" : "Shape",
-            "visible" : true,
+            "visible" : false,
             "searchMode" : "Exact"
           }
         ],
@@ -6357,7 +6332,7 @@
                                 2
                               ],
                               [
-                                1.8369701987210297e-16,
+                                2.1431318985078681e-16,
                                 0
                               ],
                               0,
@@ -6931,7 +6906,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -7507,7 +7482,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -8083,7 +8058,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -8659,7 +8634,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -9235,7 +9210,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -9811,7 +9786,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -10387,7 +10362,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -10963,7 +10938,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -11539,7 +11514,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -12115,7 +12090,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -12691,7 +12666,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -13267,7 +13242,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -13843,7 +13818,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -14419,7 +14394,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        8.4213810586273917e-16,
                                         0
                                       ],
                                       0,
@@ -14504,7 +14479,8 @@
       "uRI" : "CIMPATH=Map/0922a26880e940ca945cc03850b01e94.xml",
       "sourceURI" : "0d2a188813274a3e9d4afbab8cff6213",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
       "useSourceMetadata" : true,
       "layerElevation" : {
@@ -14526,7 +14502,7 @@
             "refreshRateUnit" : "esriTimeUnitsSeconds",
             "rowSpan" : 1,
             "columnSpan" : 1,
-            "text" : "<div><p><span>ID: {TARGET_FID}</span></p><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Population: {population}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
+            "text" : "<div><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Population: {population}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
           }
         ],
         "gridLayout" : {
@@ -14570,33 +14546,19 @@
               "roundingValue" : 0
             },
             "readOnly" : true,
-            "visible" : true,
+            "visible" : false,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "TARGET_FID",
-            "fieldName" : "TARGET_FID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "osm_id",
+            "alias" : "OSM ID",
             "fieldName" : "osm_id",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "code",
+            "alias" : "Code",
             "fieldName" : "code",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
@@ -14610,14 +14572,14 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "fclass",
+            "alias" : "Class",
             "fieldName" : "fclass",
             "visible" : true,
             "searchMode" : "Exact"
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "population",
+            "alias" : "Population",
             "fieldName" : "population",
             "numberFormat" : {
               "type" : "CIMNumericFormat",
@@ -14631,7 +14593,7 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "name",
+            "alias" : "Name",
             "fieldName" : "name",
             "visible" : true,
             "searchMode" : "Exact"
@@ -14647,7 +14609,7 @@
             "type" : "CIMFieldDescription",
             "alias" : "Shape",
             "fieldName" : "Shape",
-            "visible" : true,
+            "visible" : false,
             "searchMode" : "Exact"
           }
         ],
@@ -14944,7 +14906,7 @@
                                 2
                               ],
                               [
-                                1.8369701987210297e-16,
+                                2.1431318985078681e-16,
                                 0
                               ],
                               0,
@@ -15049,7 +15011,7 @@
                                       ],
                                       [
                                         2.04,
-                                        4.9960036108132044e-16
+                                        5.5511151231257827e-16
                                       ]
                                     ]
                                   },
@@ -15320,7 +15282,7 @@
                                       ],
                                       [
                                         2.04,
-                                        4.9960036108132044e-16
+                                        5.5511151231257827e-16
                                       ]
                                     ]
                                   },
@@ -15591,7 +15553,7 @@
                                       ],
                                       [
                                         2.04,
-                                        4.9960036108132044e-16
+                                        5.5511151231257827e-16
                                       ]
                                     ]
                                   },
@@ -15862,7 +15824,7 @@
                                       ],
                                       [
                                         2.04,
-                                        4.9960036108132044e-16
+                                        5.5511151231257827e-16
                                       ]
                                     ]
                                   },
@@ -16133,7 +16095,7 @@
                                       ],
                                       [
                                         2.04,
-                                        4.9960036108132044e-16
+                                        5.5511151231257827e-16
                                       ]
                                     ]
                                   },
@@ -16404,7 +16366,7 @@
                                       ],
                                       [
                                         2.04,
-                                        4.9960036108132044e-16
+                                        5.5511151231257827e-16
                                       ]
                                     ]
                                   },
@@ -16675,7 +16637,7 @@
                                       ],
                                       [
                                         2.04,
-                                        4.9960036108132044e-16
+                                        5.5511151231257827e-16
                                       ]
                                     ]
                                   },
@@ -16946,7 +16908,7 @@
                                       ],
                                       [
                                         2.04,
-                                        4.9960036108132044e-16
+                                        5.5511151231257827e-16
                                       ]
                                     ]
                                   },
@@ -17217,7 +17179,7 @@
                                       ],
                                       [
                                         2.04,
-                                        4.9960036108132044e-16
+                                        5.5511151231257827e-16
                                       ]
                                     ]
                                   },
@@ -17466,7 +17428,8 @@
       "uRI" : "CIMPATH=Map/32eab394ea6f42029b366a0e82e99979.xml",
       "sourceURI" : "0d2a188813274a3e9d4afbab8cff6213",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
       "useSourceMetadata" : true,
       "layerElevation" : {
@@ -17489,7 +17452,7 @@
             "refreshRateUnit" : "esriTimeUnitsSeconds",
             "rowSpan" : 1,
             "columnSpan" : 1,
-            "text" : "<div><p><span>ID: {TARGET_FID}</span></p><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Population: {population}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
+            "text" : "<div><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Population: {population}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
           }
         ],
         "gridLayout" : {
@@ -17520,6 +17483,130 @@
         "type" : "CIMFeatureTable",
         "displayField" : "name",
         "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "FID",
+            "fieldName" : "FID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OSM ID",
+            "fieldName" : "osm_id",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Code",
+            "fieldName" : "code",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Class",
+            "fieldName" : "fclass",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Population",
+            "fieldName" : "population",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Name",
+            "fieldName" : "name",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "County",
+            "fieldName" : "County",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Are",
+            "fieldName" : "Shape__Are",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Area",
+            "fieldName" : "Shape__Area",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Len",
+            "fieldName" : "Shape__Len",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Length",
+            "fieldName" : "Shape__Length",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : false,
+            "searchMode" : "Exact"
+          }
+        ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
           "workspaceConnectionString" : "URL=https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/GADEP_Oregon_Coast_Data/FeatureServer",
@@ -18469,7 +18556,7 @@
             "refreshRateUnit" : "esriTimeUnitsSeconds",
             "rowSpan" : 1,
             "columnSpan" : 1,
-            "text" : "<div><p><span>ID: {TARGET_FID}</span></p><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
+            "text" : "<div><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
           }
         ],
         "gridLayout" : {
@@ -18500,6 +18587,72 @@
         "type" : "CIMFeatureTable",
         "displayField" : "name",
         "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "FID",
+            "fieldName" : "FID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OSM ID",
+            "fieldName" : "osm_id",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Code",
+            "fieldName" : "code",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Class",
+            "fieldName" : "fclass",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Name",
+            "fieldName" : "name",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "County",
+            "fieldName" : "County",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : false,
+            "searchMode" : "Exact"
+          }
+        ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
           "workspaceConnectionString" : "URL=https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/GADEP_Oregon_Coast_Data/FeatureServer",
@@ -19126,7 +19279,7 @@
                                         5
                                       ],
                                       [
-                                        1.8033916447833693e-14,
+                                        1.9036698534591899e-14,
                                         0
                                       ],
                                       0,
@@ -19825,7 +19978,7 @@
                                         5
                                       ],
                                       [
-                                        1.7926475509966743e-14,
+                                        1.8606934783124096e-14,
                                         0
                                       ],
                                       0,
@@ -20181,7 +20334,7 @@
                                         5
                                       ],
                                       [
-                                        1.7783220926144143e-14,
+                                        1.8033916447833693e-14,
                                         0
                                       ],
                                       0,
@@ -20585,7 +20738,7 @@
                                         5
                                       ],
                                       [
-                                        1.749671175849894e-14,
+                                        1.7998102801878044e-14,
                                         0
                                       ],
                                       0,
@@ -20945,7 +21098,7 @@
                                         5
                                       ],
                                       [
-                                        1.6923693423208537e-14,
+                                        1.7926475509966743e-14,
                                         0
                                       ],
                                       0,
@@ -21219,7 +21372,7 @@
                                         5
                                       ],
                                       [
-                                        1.6887879777252888e-14,
+                                        1.7783220926144143e-14,
                                         0
                                       ],
                                       0,
@@ -21551,7 +21704,7 @@
                                         5
                                       ],
                                       [
-                                        1.6386488733873783e-14,
+                                        1.6887879777252888e-14,
                                         0
                                       ],
                                       0,
@@ -21996,7 +22149,7 @@
                                         5
                                       ],
                                       [
-                                        1.581347039858338e-14,
+                                        1.6816252485341586e-14,
                                         0
                                       ],
                                       0,
@@ -22441,7 +22594,7 @@
                                         5
                                       ],
                                       [
-                                        1.5777656752627731e-14,
+                                        1.6672997901518986e-14,
                                         0
                                       ],
                                       0,
@@ -22886,7 +23039,7 @@
                                         5
                                       ],
                                       [
-                                        1.570602946071643e-14,
+                                        1.6386488733873783e-14,
                                         0
                                       ],
                                       0,
@@ -23284,7 +23437,7 @@
                                         5
                                       ],
                                       [
-                                        1.556277487689383e-14,
+                                        1.581347039858338e-14,
                                         0
                                       ],
                                       0,
@@ -23626,7 +23779,7 @@
                                         5
                                       ],
                                       [
-                                        1.5276265709248627e-14,
+                                        1.5777656752627731e-14,
                                         0
                                       ],
                                       0,
@@ -23941,7 +24094,7 @@
                                         5
                                       ],
                                       [
-                                        1.4703247373958224e-14,
+                                        1.570602946071643e-14,
                                         0
                                       ],
                                       0,
@@ -24501,7 +24654,7 @@
                                         5
                                       ],
                                       [
-                                        1.4667433728002575e-14,
+                                        1.556277487689383e-14,
                                         0
                                       ],
                                       0,
@@ -25061,7 +25214,7 @@
                                         5
                                       ],
                                       [
-                                        1.4595806436091273e-14,
+                                        1.5276265709248627e-14,
                                         0
                                       ],
                                       0,
@@ -25621,7 +25774,7 @@
                                         5
                                       ],
                                       [
-                                        1.4452551852268673e-14,
+                                        1.4703247373958224e-14,
                                         0
                                       ],
                                       0,
@@ -26181,7 +26334,7 @@
                                         5
                                       ],
                                       [
-                                        1.416604268462347e-14,
+                                        1.4667433728002575e-14,
                                         0
                                       ],
                                       0,
@@ -27453,7 +27606,7 @@
                                         5
                                       ],
                                       [
-                                        1.3593024349333067e-14,
+                                        1.4595806436091273e-14,
                                         0
                                       ],
                                       0,
@@ -27785,7 +27938,7 @@
                                         5
                                       ],
                                       [
-                                        1.3557210703377416e-14,
+                                        1.4452551852268673e-14,
                                         0
                                       ],
                                       0,
@@ -28151,7 +28304,7 @@
                                         5
                                       ],
                                       [
-                                        1.3485583411466116e-14,
+                                        1.416604268462347e-14,
                                         0
                                       ],
                                       0,
@@ -29119,7 +29272,7 @@
                                         5
                                       ],
                                       [
-                                        1.3342328827643515e-14,
+                                        1.3593024349333067e-14,
                                         0
                                       ],
                                       0,
@@ -29389,7 +29542,7 @@
                                         5
                                       ],
                                       [
-                                        1.0154914337590645e-14,
+                                        1.0835373610748e-14,
                                         0
                                       ],
                                       0,
@@ -29721,7 +29874,7 @@
                                         5
                                       ],
                                       [
-                                        1.3055819659998313e-14,
+                                        1.3557210703377416e-14,
                                         0
                                       ],
                                       0,
@@ -30119,7 +30272,7 @@
                                         5
                                       ],
                                       [
-                                        1.2482801324707911e-14,
+                                        1.3485583411466116e-14,
                                         0
                                       ],
                                       0,
@@ -30609,7 +30762,7 @@
                                         5
                                       ],
                                       [
-                                        1.244698767875226e-14,
+                                        1.3342328827643515e-14,
                                         0
                                       ],
                                       0,
@@ -30893,7 +31046,7 @@
                                         5
                                       ],
                                       [
-                                        1.237536038684096e-14,
+                                        1.3055819659998313e-14,
                                         0
                                       ],
                                       0,
@@ -31225,7 +31378,7 @@
                                         5
                                       ],
                                       [
-                                        1.2232105803018358e-14,
+                                        1.2482801324707911e-14,
                                         0
                                       ],
                                       0,
@@ -31509,7 +31662,7 @@
                                         5
                                       ],
                                       [
-                                        1.1945596635373157e-14,
+                                        1.244698767875226e-14,
                                         0
                                       ],
                                       0,
@@ -31743,7 +31896,7 @@
                                         5
                                       ],
                                       [
-                                        1.1372578300082754e-14,
+                                        1.237536038684096e-14,
                                         0
                                       ],
                                       0,
@@ -32075,7 +32228,7 @@
                                         5
                                       ],
                                       [
-                                        1.1336764654127103e-14,
+                                        1.2232105803018358e-14,
                                         0
                                       ],
                                       0,
@@ -32182,7 +32335,7 @@
                                       ],
                                       [
                                         6.6381122349231578,
-                                        0.21958566022852022
+                                        0.21958566022852111
                                       ]
                                     ]
                                   },
@@ -32805,7 +32958,7 @@
                                         5
                                       ],
                                       [
-                                        1.1121882778393202e-14,
+                                        1.1372578300082754e-14,
                                         0
                                       ],
                                       0,
@@ -33217,7 +33370,7 @@
                                         5
                                       ],
                                       [
-                                        1.0835373610748e-14,
+                                        1.1336764654127103e-14,
                                         0
                                       ],
                                       0,
@@ -33661,7 +33814,7 @@
                                         5
                                       ],
                                       [
-                                        1.0262355275457596e-14,
+                                        1.1265137362215803e-14,
                                         0
                                       ],
                                       0,
@@ -34059,7 +34212,7 @@
                                         5
                                       ],
                                       [
-                                        1.0226541629501945e-14,
+                                        1.1121882778393202e-14,
                                         0
                                       ],
                                       0,
@@ -34471,7 +34624,7 @@
                                         5
                                       ],
                                       [
-                                        1.0011659753768044e-14,
+                                        1.0262355275457596e-14,
                                         0
                                       ],
                                       0,
@@ -34691,7 +34844,7 @@
                                       ],
                                       [
                                         6.6381122349231578,
-                                        0.21958566022852022
+                                        0.21958566022852111
                                       ]
                                     ]
                                   },
@@ -35208,7 +35361,7 @@
                                         5
                                       ],
                                       [
-                                        9.1521322508324378e-15,
+                                        1.0154914337590645e-14,
                                         0
                                       ],
                                       0,
@@ -35606,7 +35759,7 @@
                                         5
                                       ],
                                       [
-                                        9.1163186048767855e-15,
+                                        1.0011659753768044e-14,
                                         0
                                       ],
                                       0,
@@ -36004,7 +36157,7 @@
                                         5
                                       ],
                                       [
-                                        9.0446913129654808e-15,
+                                        9.7251505861228423e-15,
                                         0
                                       ],
                                       0,
@@ -36336,7 +36489,7 @@
                                         5
                                       ],
                                       [
-                                        8.9014367291428714e-15,
+                                        9.1521322508324378e-15,
                                         0
                                       ],
                                       0,
@@ -36746,7 +36899,7 @@
                                         5
                                       ],
                                       [
-                                        8.614927561497651e-15,
+                                        9.1163186048767855e-15,
                                         0
                                       ],
                                       0,
@@ -37078,7 +37231,7 @@
                                         5
                                       ],
                                       [
-                                        8.0419092262072119e-15,
+                                        9.0446913129654808e-15,
                                         0
                                       ],
                                       0,
@@ -37476,7 +37629,7 @@
                                         5
                                       ],
                                       [
-                                        8.0060955802514901e-15,
+                                        8.9014367291428714e-15,
                                         0
                                       ],
                                       0,
@@ -37746,7 +37899,7 @@
                                         5
                                       ],
                                       [
-                                        7.9344682883400466e-15,
+                                        8.614927561497651e-15,
                                         0
                                       ],
                                       0,
@@ -38144,7 +38297,7 @@
                                         5
                                       ],
                                       [
-                                        7.7912137045171595e-15,
+                                        8.0419092262072119e-15,
                                         0
                                       ],
                                       0,
@@ -38512,7 +38665,7 @@
                                         5
                                       ],
                                       [
-                                        7.5047045368713854e-15,
+                                        8.0060955802514901e-15,
                                         0
                                       ],
                                       0,
@@ -38782,7 +38935,7 @@
                                         5
                                       ],
                                       [
-                                        6.9316862015798386e-15,
+                                        7.9344682883400466e-15,
                                         0
                                       ],
                                       0,
@@ -39130,7 +39283,7 @@
                                         5
                                       ],
                                       [
-                                        6.895872555621901e-15,
+                                        7.7912137045171595e-15,
                                         0
                                       ],
                                       0,
@@ -39641,7 +39794,7 @@
                                         5
                                       ],
                                       [
-                                        6.8242452637060248e-15,
+                                        7.5047045368713854e-15,
                                         0
                                       ],
                                       0,
@@ -40007,7 +40160,7 @@
                                         5
                                       ],
                                       [
-                                        6.6809906798742725e-15,
+                                        6.9316862015798386e-15,
                                         0
                                       ],
                                       0,
@@ -40497,7 +40650,7 @@
                                         5
                                       ],
                                       [
-                                        6.3944815122107679e-15,
+                                        6.895872555621901e-15,
                                         0
                                       ],
                                       0,
@@ -40767,7 +40920,7 @@
                                         5
                                       ],
                                       [
-                                        5.8214631768837588e-15,
+                                        6.8242452637060248e-15,
                                         0
                                       ],
                                       0,
@@ -41099,7 +41252,7 @@
                                         5
                                       ],
                                       [
-                                        5.785649530854897e-15,
+                                        6.6809906798742725e-15,
                                         0
                                       ],
                                       0,
@@ -41497,7 +41650,7 @@
                                         5
                                       ],
                                       [
-                                        5.7140222387971742e-15,
+                                        6.3944815122107679e-15,
                                         0
                                       ],
                                       0,
@@ -41853,7 +42006,7 @@
                                         5
                                       ],
                                       [
-                                        4.7112401499890494e-15,
+                                        5.7140222387971742e-15,
                                         0
                                       ],
                                       0,
@@ -42185,7 +42338,7 @@
                                         5
                                       ],
                                       [
-                                        5.284258486450835e-15,
+                                        5.785649530854897e-15,
                                         0
                                       ],
                                       0,
@@ -42541,7 +42694,7 @@
                                         5
                                       ],
                                       [
-                                        4.6754265016906348e-15,
+                                        5.5707676546817278e-15,
                                         0
                                       ],
                                       0,
@@ -42889,7 +43042,7 @@
                                         5
                                       ],
                                       [
-                                        4.6037992050938056e-15,
+                                        5.284258486450835e-15,
                                         0
                                       ],
                                       0,
@@ -43231,7 +43384,7 @@
                                         5
                                       ],
                                       [
-                                        4.4605446119001471e-15,
+                                        4.7112401499890494e-15,
                                         0
                                       ],
                                       0,
@@ -43563,7 +43716,7 @@
                                         5
                                       ],
                                       [
-                                        4.1740354255128309e-15,
+                                        4.6754265016906348e-15,
                                         0
                                       ],
                                       0,
@@ -44757,7 +44910,7 @@
                                         5
                                       ],
                                       [
-                                        3.6010170527381978e-15,
+                                        4.6037992050938056e-15,
                                         0
                                       ],
                                       0,
@@ -45202,7 +45355,7 @@
                                         5
                                       ],
                                       [
-                                        3.5652033318140865e-15,
+                                        4.4605446119001471e-15,
                                         0
                                       ],
                                       0,
@@ -45436,7 +45589,7 @@
                                         5
                                       ],
                                       [
-                                        3.493575889965865e-15,
+                                        4.1740354255128309e-15,
                                         0
                                       ],
                                       0,
@@ -45720,7 +45873,7 @@
                                         5
                                       ],
                                       [
-                                        3.3503210062694217e-15,
+                                        3.6010170527381978e-15,
                                         0
                                       ],
                                       0,
@@ -45954,7 +46107,7 @@
                                         5
                                       ],
                                       [
-                                        3.0638112388765348e-15,
+                                        3.5652033318140865e-15,
                                         0
                                       ],
                                       0,
@@ -46593,7 +46746,7 @@
                                         5
                                       ],
                                       [
-                                        2.4907917040907614e-15,
+                                        3.493575889965865e-15,
                                         0
                                       ],
                                       0,
@@ -47077,7 +47230,7 @@
                                         5
                                       ],
                                       [
-                                        2.454975659144371e-15,
+                                        3.3503210062694217e-15,
                                         0
                                       ],
                                       0,
@@ -47321,7 +47474,7 @@
                                         5
                                       ],
                                       [
-                                        2.383343569251591e-15,
+                                        3.0638112388765348e-15,
                                         0
                                       ],
                                       0,
@@ -47565,7 +47718,7 @@
                                         5
                                       ],
                                       [
-                                        2.2400793894660303e-15,
+                                        2.4907917040907614e-15,
                                         0
                                       ],
                                       0,
@@ -47955,7 +48108,7 @@
                                         5
                                       ],
                                       [
-                                        1.3804943107526663e-15,
+                                        2.383343569251591e-15,
                                         0
                                       ],
                                       0,
@@ -48225,7 +48378,7 @@
                                         5
                                       ],
                                       [
-                                        1.3446038970933378e-15,
+                                        2.2400793894660303e-15,
                                         0
                                       ],
                                       0,
@@ -49202,7 +49355,7 @@
                                         5
                                       ],
                                       [
-                                        1.2728230697746809e-15,
+                                        1.9535510298949089e-15,
                                         0
                                       ],
                                       0,
@@ -49681,7 +49834,7 @@
                                         5
                                       ],
                                       [
-                                        1.129261415137367e-15,
+                                        1.3804943107526663e-15,
                                         0
                                       ],
                                       0,
@@ -49766,7 +49919,8 @@
       "uRI" : "CIMPATH=Map/b7be2b8659df4a0c97facfe728121efb.xml",
       "sourceURI" : "0d2a188813274a3e9d4afbab8cff6213",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
       "useSourceMetadata" : true,
       "layerElevation" : {
@@ -49789,7 +49943,7 @@
             "refreshRateUnit" : "esriTimeUnitsSeconds",
             "rowSpan" : 1,
             "columnSpan" : 1,
-            "text" : "<div><p><span>ID: {TARGET_FID}</span></p><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
+            "text" : "<div><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
           }
         ],
         "gridLayout" : {
@@ -49820,6 +49974,102 @@
         "type" : "CIMFeatureTable",
         "displayField" : "name",
         "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "FID",
+            "fieldName" : "FID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OSM ID",
+            "fieldName" : "osm_id",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Code",
+            "fieldName" : "code",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Class",
+            "fieldName" : "fclass",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Name",
+            "fieldName" : "name",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "County",
+            "fieldName" : "County",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Area",
+            "fieldName" : "Shape__Area",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Length",
+            "fieldName" : "Shape__Length",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : false,
+            "searchMode" : "Exact"
+          }
+        ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
           "workspaceConnectionString" : "URL=https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/GADEP_Oregon_Coast_Data/FeatureServer",
@@ -55569,7 +55819,8 @@
       "uRI" : "CIMPATH=Map/83e2105413d04915a6121374f949fc78.xml",
       "sourceURI" : "0d2a188813274a3e9d4afbab8cff6213",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
       "useSourceMetadata" : true,
       "layerElevation" : {
@@ -55591,7 +55842,7 @@
             "refreshRateUnit" : "esriTimeUnitsSeconds",
             "rowSpan" : 1,
             "columnSpan" : 1,
-            "text" : "<div><p><span>ID: {TARGET_FID}</span></p><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
+            "text" : "<div><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
           }
         ],
         "gridLayout" : {
@@ -55622,6 +55873,72 @@
         "type" : "CIMFeatureTable",
         "displayField" : "name",
         "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "FID",
+            "fieldName" : "FID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OSM ID",
+            "fieldName" : "osm_id",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Code",
+            "fieldName" : "code",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Class",
+            "fieldName" : "fclass",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Name",
+            "fieldName" : "name",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "County",
+            "fieldName" : "County",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : false,
+            "searchMode" : "Exact"
+          }
+        ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
           "workspaceConnectionString" : "URL=https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/GADEP_Oregon_Coast_Data/FeatureServer",
@@ -55915,7 +56232,7 @@
                                 2
                               ],
                               [
-                                6.7466240421580192e-16,
+                                1.0758021076153718e-15,
                                 0
                               ],
                               0,
@@ -56455,7 +56772,7 @@
                                         5
                                       ],
                                       [
-                                        1.3446038970933378e-15,
+                                        2.2400793894660303e-15,
                                         0
                                       ],
                                       0,
@@ -56993,7 +57310,7 @@
                                         5
                                       ],
                                       [
-                                        1.2728230697746809e-15,
+                                        1.9535510298949089e-15,
                                         0
                                       ],
                                       0,
@@ -57415,7 +57732,7 @@
                                         5
                                       ],
                                       [
-                                        1.129261415137367e-15,
+                                        1.3804943107526663e-15,
                                         0
                                       ],
                                       0,
@@ -57837,7 +58154,7 @@
                                         5
                                       ],
                                       [
-                                        8.4213810586273917e-16,
+                                        1.3446038970933378e-15,
                                         0
                                       ],
                                       0,
@@ -58259,7 +58576,7 @@
                                         5
                                       ],
                                       [
-                                        2.6789148731348353e-16,
+                                        1.2728230697746809e-15,
                                         0
                                       ],
                                       0,
@@ -58808,7 +59125,8 @@
       "uRI" : "CIMPATH=Map/8012f529b80c414c9e6237a870ddb135.xml",
       "sourceURI" : "0d2a188813274a3e9d4afbab8cff6213",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
       "useSourceMetadata" : true,
       "layerElevation" : {
@@ -58831,7 +59149,7 @@
             "refreshRateUnit" : "esriTimeUnitsSeconds",
             "rowSpan" : 1,
             "columnSpan" : 1,
-            "text" : "<div><p><span>ID: {TARGET_FID}</span></p><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
+            "text" : "<div><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
           }
         ],
         "gridLayout" : {
@@ -58862,6 +59180,102 @@
         "type" : "CIMFeatureTable",
         "displayField" : "name",
         "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "FID",
+            "fieldName" : "FID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OSM ID",
+            "fieldName" : "osm_id",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Code",
+            "fieldName" : "code",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Class",
+            "fieldName" : "fclass",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Name",
+            "fieldName" : "name",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "County",
+            "fieldName" : "County",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Area",
+            "fieldName" : "Shape__Area",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Length",
+            "fieldName" : "Shape__Length",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : false,
+            "searchMode" : "Exact"
+          }
+        ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
           "workspaceConnectionString" : "URL=https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/GADEP_Oregon_Coast_Data/FeatureServer",
@@ -59893,7 +60307,8 @@
       "uRI" : "CIMPATH=Map/d2bb63ccbf564ac78c0c78f5c1746b90.xml",
       "sourceURI" : "0d2a188813274a3e9d4afbab8cff6213",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
       "useSourceMetadata" : true,
       "layerElevation" : {
@@ -59915,7 +60330,7 @@
             "refreshRateUnit" : "esriTimeUnitsSeconds",
             "rowSpan" : 1,
             "columnSpan" : 1,
-            "text" : "<div><p><span>ID: {TARGET_FID}</span></p><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
+            "text" : "<div><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
           }
         ],
         "gridLayout" : {
@@ -59946,6 +60361,72 @@
         "type" : "CIMFeatureTable",
         "displayField" : "name",
         "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "FID",
+            "fieldName" : "FID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OSM ID",
+            "fieldName" : "osm_id",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Code",
+            "fieldName" : "code",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Class",
+            "fieldName" : "fclass",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Name",
+            "fieldName" : "name",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "County",
+            "fieldName" : "County",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : false,
+            "searchMode" : "Exact"
+          }
+        ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
           "workspaceConnectionString" : "URL=https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/GADEP_Oregon_Coast_Data/FeatureServer",
@@ -60239,7 +60720,7 @@
                                 2
                               ],
                               [
-                                1.3479891754653494e-15,
+                                1.5485460126403701e-15,
                                 0
                               ],
                               0,
@@ -60599,7 +61080,7 @@
                                         5
                                       ],
                                       [
-                                        3.493575889965865e-15,
+                                        4.1740354255128309e-15,
                                         0
                                       ],
                                       0,
@@ -60961,7 +61442,7 @@
                                         5
                                       ],
                                       [
-                                        3.3503210062694217e-15,
+                                        3.6010170527381978e-15,
                                         0
                                       ],
                                       0,
@@ -61323,7 +61804,7 @@
                                         5
                                       ],
                                       [
-                                        1.2728230697746809e-15,
+                                        1.9535510298949089e-15,
                                         0
                                       ],
                                       0,
@@ -61789,7 +62270,7 @@
                                         5
                                       ],
                                       [
-                                        3.0638112388765348e-15,
+                                        3.5652033318140865e-15,
                                         0
                                       ],
                                       0,
@@ -62255,7 +62736,7 @@
                                         5
                                       ],
                                       [
-                                        2.4907917040907614e-15,
+                                        3.493575889965865e-15,
                                         0
                                       ],
                                       0,
@@ -62899,7 +63380,7 @@
                                         5
                                       ],
                                       [
-                                        2.454975659144371e-15,
+                                        3.3503210062694217e-15,
                                         0
                                       ],
                                       0,
@@ -63373,7 +63854,7 @@
                                         5
                                       ],
                                       [
-                                        2.2400793894660303e-15,
+                                        2.4907917040907614e-15,
                                         0
                                       ],
                                       0,
@@ -63739,7 +64220,7 @@
                                         5
                                       ],
                                       [
-                                        1.9535510298949089e-15,
+                                        2.454975659144371e-15,
                                         0
                                       ],
                                       0,
@@ -64218,7 +64699,7 @@
                                         5
                                       ],
                                       [
-                                        1.3446038970933378e-15,
+                                        2.2400793894660303e-15,
                                         0
                                       ],
                                       0,
@@ -64303,7 +64784,8 @@
       "uRI" : "CIMPATH=Map/3ee6f51d5b464171bfc0bd41df5f5280.xml",
       "sourceURI" : "0d2a188813274a3e9d4afbab8cff6213",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
       "useSourceMetadata" : true,
       "layerElevation" : {
@@ -64326,7 +64808,7 @@
             "refreshRateUnit" : "esriTimeUnitsSeconds",
             "rowSpan" : 1,
             "columnSpan" : 1,
-            "text" : "<div><p><span>ID: {TARGET_FID}</span></p><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
+            "text" : "<div><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
           }
         ],
         "gridLayout" : {
@@ -64357,6 +64839,102 @@
         "type" : "CIMFeatureTable",
         "displayField" : "name",
         "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "FID",
+            "fieldName" : "FID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OSM ID",
+            "fieldName" : "osm_id",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Code",
+            "fieldName" : "code",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Class",
+            "fieldName" : "fclass",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Name",
+            "fieldName" : "name",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "County",
+            "fieldName" : "County",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Area",
+            "fieldName" : "Shape__Area",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Length",
+            "fieldName" : "Shape__Length",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : false,
+            "searchMode" : "Exact"
+          }
+        ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
           "workspaceConnectionString" : "URL=https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/GADEP_Oregon_Coast_Data/FeatureServer",
@@ -65229,7 +65807,8 @@
       "uRI" : "CIMPATH=Map/fb57e10f284f41c581924d3310e3342d.xml",
       "sourceURI" : "0d2a188813274a3e9d4afbab8cff6213",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
       "useSourceMetadata" : true,
       "layerElevation" : {
@@ -65252,7 +65831,7 @@
             "refreshRateUnit" : "esriTimeUnitsSeconds",
             "rowSpan" : 1,
             "columnSpan" : 1,
-            "text" : "<div><p><span>ID: {TARGET_FID}</span></p><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
+            "text" : "<div><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Class: {fclass}</span></p><p><span>Name: {name}</span></p><p><span>County: {County}</span></p></div>"
           }
         ],
         "gridLayout" : {
@@ -65283,6 +65862,102 @@
         "type" : "CIMFeatureTable",
         "displayField" : "name",
         "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "FID",
+            "fieldName" : "FID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OSM ID",
+            "fieldName" : "osm_id",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Code",
+            "fieldName" : "code",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Class",
+            "fieldName" : "fclass",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Name",
+            "fieldName" : "name",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "County",
+            "fieldName" : "County",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Area",
+            "fieldName" : "Shape__Area",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Length",
+            "fieldName" : "Shape__Length",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : false,
+            "searchMode" : "Exact"
+          }
+        ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
           "workspaceConnectionString" : "URL=https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/GADEP_Oregon_Coast_Data/FeatureServer",
@@ -65946,7 +66621,7 @@
             "refreshRateUnit" : "esriTimeUnitsSeconds",
             "rowSpan" : 1,
             "columnSpan" : 1,
-            "text" : "<div><p><span>ID: {TARGET_FID}</span></p><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Path description: {PATH_DESC}</span></p><p><span>Shape length: {Shape__Length}</span></p><p><span>Prefix: {PREFIX}</span></p><p><span>Name: {NAME}</span></p><p><span>Suffix: {SUFFIX}</span></p><p><span>Type: {TYPE}</span></p><p><span>Class: {fclass}</span></p><p><span>Oneway: {oneway}</span></p><p><span>Max speed: {maxspeed}</span></p><p><span>Bridge: {bridge}</span></p><p><span>Tunnel: {tunnel}</span></p><p><span>L County: {LCNTY}</span></p><p><span>R County: {RCNTY}</span></p></div>"
+            "text" : "<div><p><span>OSM ID: {osm_id}</span></p><p><span>OSM Code: {code}</span></p><p><span>Path description: {PATH_DESC}</span></p><p><span>Shape length: {Shape__Length}</span></p><p><span>Prefix: {PREFIX}</span></p><p><span>Name: {NAME}</span></p><p><span>Suffix: {SUFFIX}</span></p><p><span>Type: {TYPE}</span></p><p><span>Class: {fclass}</span></p><p><span>Oneway: {oneway}</span></p><p><span>Max speed: {maxspeed}</span></p><p><span>Bridge: {bridge}</span></p><p><span>Tunnel: {tunnel}</span></p><p><span>L County: {LCNTY}</span></p><p><span>R County: {RCNTY}</span></p></div>"
           }
         ],
         "gridLayout" : {
@@ -65977,6 +66652,521 @@
         "type" : "CIMFeatureTable",
         "displayField" : "NAME",
         "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "FID",
+            "fieldName" : "FID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "readOnly" : true,
+            "visible" : false,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ROADOWNER",
+            "fieldName" : "ROADOWNER",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ROADMGR",
+            "fieldName" : "ROADMGR",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ORIGINATOR",
+            "fieldName" : "ORIGINATOR",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "UPDATER",
+            "fieldName" : "UPDATER",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OWNER_ID",
+            "fieldName" : "OWNER_ID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "MGR_ID",
+            "fieldName" : "MGR_ID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ORIGTR_ID",
+            "fieldName" : "ORIGTR_ID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "UD_ID",
+            "fieldName" : "UD_ID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "MEAS_CD",
+            "fieldName" : "MEAS_CD",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "LOCL_ID",
+            "fieldName" : "LOCL_ID",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "LOCL_LRS",
+            "fieldName" : "LOCL_LRS",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "LOCL_FC",
+            "fieldName" : "LOCL_FC",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "PATH_DESC",
+            "fieldName" : "PATH_DESC",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "LOCL_BEG_M",
+            "fieldName" : "LOCL_BEG_M",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "LOCL_END_M",
+            "fieldName" : "LOCL_END_M",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "CREATE_DT",
+            "fieldName" : "CREATE_DT",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "UD_DT",
+            "fieldName" : "UD_DT",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "VALIDT_DT",
+            "fieldName" : "VALIDT_DT",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "RTIR_DT",
+            "fieldName" : "RTIR_DT",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "STAT_CD",
+            "fieldName" : "STAT_CD",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "LOCL_LEN",
+            "fieldName" : "LOCL_LEN",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "L_LOW_ADD",
+            "fieldName" : "L_LOW_ADD",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "L_HIGH_ADD",
+            "fieldName" : "L_HIGH_ADD",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "R_LOW_ADD",
+            "fieldName" : "R_LOW_ADD",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "R_HIGH_ADD",
+            "fieldName" : "R_HIGH_ADD",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "NUMBER",
+            "fieldName" : "NUMBER",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "PREFIX",
+            "fieldName" : "PREFIX",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "NAME",
+            "fieldName" : "NAME",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "TYPE",
+            "fieldName" : "TYPE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "SUFFIX",
+            "fieldName" : "SUFFIX",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ALIAS_PREF",
+            "fieldName" : "ALIAS_PREF",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ALIAS_NAME",
+            "fieldName" : "ALIAS_NAME",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ALIAS_TYPE",
+            "fieldName" : "ALIAS_TYPE",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ALIAS_SUFF",
+            "fieldName" : "ALIAS_SUFF",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "L_ZIP",
+            "fieldName" : "L_ZIP",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "R_ZIP",
+            "fieldName" : "R_ZIP",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "LCITY",
+            "fieldName" : "LCITY",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "RCITY",
+            "fieldName" : "RCITY",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "LCNTY",
+            "fieldName" : "LCNTY",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "RCNTY",
+            "fieldName" : "RCNTY",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "LRS",
+            "fieldName" : "LRS",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "BEG_MRK",
+            "fieldName" : "BEG_MRK",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "BEG_OFFST",
+            "fieldName" : "BEG_OFFST",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "END_MRK",
+            "fieldName" : "END_MRK",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "END_OFFST",
+            "fieldName" : "END_OFFST",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "EFFECTV_DT",
+            "fieldName" : "EFFECTV_DT",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "GIS_PRC_DT",
+            "fieldName" : "GIS_PRC_DT",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "SHAPE_Leng",
+            "fieldName" : "SHAPE_Leng",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Len",
+            "fieldName" : "Shape__Len",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OSM ID",
+            "fieldName" : "osm_id",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Code",
+            "fieldName" : "code",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Class",
+            "fieldName" : "fclass",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ref",
+            "fieldName" : "ref",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "oneway",
+            "fieldName" : "oneway",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "maxspeed",
+            "fieldName" : "maxspeed",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "layer",
+            "fieldName" : "layer",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "bridge",
+            "fieldName" : "bridge",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "tunnel",
+            "fieldName" : "tunnel",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape__Length",
+            "fieldName" : "Shape__Length",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "readOnly" : true,
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : true,
+            "searchMode" : "Exact"
+          }
+        ],
         "dataConnection" : {
           "type" : "CIMStandardDataConnection",
           "workspaceConnectionString" : "URL=https://services1.arcgis.com/CD5mKowwN6nIaqd8/arcgis/rest/services/GADEP_Oregon_Coast_Data/FeatureServer",
@@ -66365,8 +67555,10 @@
       "uRI" : "CIMPATH=Map/7cb8255400524936abb5cc4987d1f8b9.xml",
       "sourceURI" : "0d2a188813274a3e9d4afbab8cff6213",
       "sourceModifiedTime" : {
-        "type" : "TimeInstant"
+        "type" : "TimeInstant",
+        "start" : 978307200000
       },
+      "metadataURI" : "CIMPATH=Metadata/c7ed8c2e08c40207562b0e027038d75c.xml",
       "useSourceMetadata" : true,
       "layerElevation" : {
         "type" : "CIMLayerElevationSurface",
@@ -66376,7 +67568,7 @@
       "maxScale" : 577790,
       "minScale" : 73957191,
       "showLegends" : true,
-      "visibility" : false,
+      "visibility" : true,
       "displayCacheType" : "Permanent",
       "maxDisplayCacheAge" : 5,
       "popupInfo" : {
@@ -66437,134 +67629,8 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "OBJECTID",
-            "fieldName" : "OBJECTID",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 0
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "SHAPE_Leng",
-            "fieldName" : "SHAPE_Leng",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "SHAPE_Area",
-            "fieldName" : "SHAPE_Area",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "unitID",
-            "fieldName" : "unitID",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "instName",
-            "fieldName" : "instName",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "altName",
-            "fieldName" : "altName",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "descriptn",
-            "fieldName" : "descriptn",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "instCode",
-            "fieldName" : "instCode",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "codeRef",
-            "fieldName" : "codeRef",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "effDate",
-            "fieldName" : "effDate",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "unitOwner",
-            "fieldName" : "unitOwner",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "cSteward",
-            "fieldName" : "cSteward",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape__Are",
-            "fieldName" : "Shape__Are",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
-            "alias" : "Shape__Len",
-            "fieldName" : "Shape__Len",
-            "numberFormat" : {
-              "type" : "CIMNumericFormat",
-              "alignmentOption" : "esriAlignRight",
-              "alignmentWidth" : 0,
-              "roundingOption" : "esriRoundNumberOfDecimals",
-              "roundingValue" : 6
-            },
+            "alias" : "County",
+            "fieldName" : "County",
             "visible" : true,
             "searchMode" : "Exact"
           },
@@ -66580,7 +67646,7 @@
               "roundingValue" : 6
             },
             "readOnly" : true,
-            "visible" : true,
+            "visible" : false,
             "searchMode" : "Exact"
           },
           {
@@ -66595,7 +67661,7 @@
               "roundingValue" : 6
             },
             "readOnly" : true,
-            "visible" : true,
+            "visible" : false,
             "searchMode" : "Exact"
           },
           {
@@ -66656,16 +67722,9 @@
           },
           {
             "type" : "CIMFieldDescription",
-            "alias" : "County",
-            "fieldName" : "County",
-            "visible" : true,
-            "searchMode" : "Exact"
-          },
-          {
-            "type" : "CIMFieldDescription",
             "alias" : "Shape",
             "fieldName" : "Shape",
-            "visible" : true,
+            "visible" : false,
             "searchMode" : "Exact"
           }
         ],
@@ -67008,6 +68067,11 @@
       "type" : "CIMBinaryReference",
       "uRI" : "CIMPATH=Metadata/752e45f68dad0195ade84187d7be33d6.xml",
       "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20220423</CreaDate><CreaTime>10162200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri></metadata>\r\n"
+    },
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/c7ed8c2e08c40207562b0e027038d75c.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20220425</CreaDate><CreaTime>19564200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri></metadata>\r\n"
     },
     {
       "type" : "CIMBinaryReference",
