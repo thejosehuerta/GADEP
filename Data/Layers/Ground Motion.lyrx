@@ -1,0 +1,352 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "2.9.0",
+  "build" : 32739,
+  "layers" : [
+    "CIMPATH=map/new_group_layer2.xml"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMDynamicServiceLayer",
+      "name" : "M81 PGA Soil",
+      "uRI" : "CIMPATH=map/m81_01_pga_soil.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "M81_01_PGA_Soil",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "{52FF5DAF-3325-4286-A52D-2D85B97B9431}"
+      },
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : false,
+      "displayCacheType" : "None",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "serviceConnection" : {
+        "type" : "CIMAGSServiceConnection",
+        "objectName" : "M81_01_PGA_Soil",
+        "objectType" : "MapServer",
+        "url" : "https://arcweld.engineering.oregonstate.edu:6443/arcgis/rest/services/OHELP/M81/MapServer",
+        "serverConnection" : {
+          "type" : "CIMProjectServerConnection",
+          "anonymous" : true,
+          "hideUserProperty" : true,
+          "url" : "https://arcweld.engineering.oregonstate.edu:6443/arcgis/services",
+          "connectionMode" : "Consumer",
+          "serverType" : "AGS",
+          "useDefaultStagingFolder" : true
+        }
+      },
+      "subLayers" : [
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "name" : "M81_01_PGA_Soil",
+          "showLegends" : true,
+          "subLayerID" : "1",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "showPopups" : true
+        }
+      ],
+      "transparentColor" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          254,
+          254,
+          254,
+          100
+        ]
+      },
+      "backgroundColor" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          254,
+          254,
+          254,
+          100
+        ]
+      },
+      "imageFormat" : "esriImagePNG32"
+    },
+    {
+      "type" : "CIMDynamicServiceLayer",
+      "name" : "M84 PGA Soil",
+      "uRI" : "CIMPATH=map/m87_01_pga_soil.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "M87_01_PGA_Soil",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "{52FF5DAF-3325-4286-A52D-2D85B97B9431}"
+      },
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : false,
+      "displayCacheType" : "None",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "serviceConnection" : {
+        "type" : "CIMAGSServiceConnection",
+        "objectName" : "M87_01_PGA_Soil",
+        "objectType" : "MapServer",
+        "url" : "https://arcweld.engineering.oregonstate.edu:6443/arcgis/rest/services/OHELP/M87/MapServer",
+        "serverConnection" : {
+          "type" : "CIMProjectServerConnection",
+          "anonymous" : true,
+          "hideUserProperty" : true,
+          "url" : "https://arcweld.engineering.oregonstate.edu:6443/arcgis/services",
+          "connectionMode" : "Consumer",
+          "serverType" : "AGS",
+          "useDefaultStagingFolder" : true
+        }
+      },
+      "subLayers" : [
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "name" : "M87_01_PGA_Soil",
+          "showLegends" : true,
+          "subLayerID" : "1",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "showPopups" : true
+        }
+      ],
+      "transparentColor" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          254,
+          254,
+          254,
+          100
+        ]
+      },
+      "backgroundColor" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          254,
+          254,
+          254,
+          100
+        ]
+      },
+      "imageFormat" : "esriImagePNG32"
+    },
+    {
+      "type" : "CIMDynamicServiceLayer",
+      "name" : "M87 PGA Soil",
+      "uRI" : "CIMPATH=map/m84_01_pga_soil.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "M84_01_PGA_Soil",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "{52FF5DAF-3325-4286-A52D-2D85B97B9431}"
+      },
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : false,
+      "displayCacheType" : "None",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "serviceConnection" : {
+        "type" : "CIMAGSServiceConnection",
+        "objectName" : "M84_01_PGA_Soil",
+        "objectType" : "MapServer",
+        "url" : "https://arcweld.engineering.oregonstate.edu:6443/arcgis/rest/services/OHELP/M84/MapServer",
+        "serverConnection" : {
+          "type" : "CIMProjectServerConnection",
+          "anonymous" : true,
+          "hideUserProperty" : true,
+          "url" : "https://arcweld.engineering.oregonstate.edu:6443/arcgis/services",
+          "connectionMode" : "Consumer",
+          "serverType" : "AGS",
+          "useDefaultStagingFolder" : true
+        }
+      },
+      "subLayers" : [
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "name" : "M84_01_PGA_Soil",
+          "showLegends" : true,
+          "subLayerID" : "1",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "showPopups" : true
+        }
+      ],
+      "transparentColor" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          254,
+          254,
+          254,
+          100
+        ]
+      },
+      "backgroundColor" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          254,
+          254,
+          254,
+          100
+        ]
+      },
+      "imageFormat" : "esriImagePNG32"
+    },
+    {
+      "type" : "CIMDynamicServiceLayer",
+      "name" : "M90 PGA Soil",
+      "uRI" : "CIMPATH=map/m90_01_pga_soil.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "M90_01_PGA_Soil",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "{52FF5DAF-3325-4286-A52D-2D85B97B9431}"
+      },
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : false,
+      "displayCacheType" : "None",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "serviceConnection" : {
+        "type" : "CIMAGSServiceConnection",
+        "objectName" : "M90_01_PGA_Soil",
+        "objectType" : "MapServer",
+        "url" : "https://arcweld.engineering.oregonstate.edu:6443/arcgis/rest/services/OHELP/M90/MapServer",
+        "serverConnection" : {
+          "type" : "CIMProjectServerConnection",
+          "anonymous" : true,
+          "hideUserProperty" : true,
+          "url" : "https://arcweld.engineering.oregonstate.edu:6443/arcgis/services",
+          "connectionMode" : "Consumer",
+          "serverType" : "AGS",
+          "useDefaultStagingFolder" : true
+        }
+      },
+      "subLayers" : [
+        {
+          "type" : "CIMDynamicServiceSubLayer",
+          "name" : "M90_01_PGA_Soil",
+          "showLegends" : true,
+          "subLayerID" : "1",
+          "visibility" : true,
+          "serviceLayerID" : -1,
+          "timeOffsetUnits" : "esriTimeUnitsUnknown",
+          "showPopups" : true
+        }
+      ],
+      "transparentColor" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          254,
+          254,
+          254,
+          100
+        ]
+      },
+      "backgroundColor" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          254,
+          254,
+          254,
+          100
+        ]
+      },
+      "imageFormat" : "esriImagePNG32"
+    },
+    {
+      "type" : "CIMGroupLayer",
+      "name" : "Ground Motion",
+      "uRI" : "CIMPATH=map/new_group_layer2.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "metadataURI" : "CIMPATH=Metadata/a2f7a97482f24f93669189f2e1dd25c2.xml",
+      "useSourceMetadata" : true,
+      "description" : "New Group Layer",
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "layers" : [
+        "CIMPATH=map/m81_01_pga_soil.xml",
+        "CIMPATH=map/m87_01_pga_soil.xml",
+        "CIMPATH=map/m84_01_pga_soil.xml",
+        "CIMPATH=map/m90_01_pga_soil.xml"
+      ]
+    }
+  ],
+  "binaryReferences" : [
+    {
+      "type" : "CIMBinaryReference",
+      "uRI" : "CIMPATH=Metadata/a2f7a97482f24f93669189f2e1dd25c2.xml",
+      "data" : "<?xml version=\"1.0\"?>\r\n<metadata xml:lang=\"en\"><Esri><CreaDate>20220422</CreaDate><CreaTime>21194800</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce></Esri><dataIdInfo><idCitation><resTitle>New Group Layer</resTitle></idCitation></dataIdInfo></metadata>\r\n"
+    }
+  ],
+  "elevationSurfaces" : [
+    {
+      "type" : "CIMMapElevationSurface",
+      "elevationMode" : "BaseGlobeSurface",
+      "name" : "Ground",
+      "verticalExaggeration" : 1,
+      "mapElevationID" : "{52FF5DAF-3325-4286-A52D-2D85B97B9431}",
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth",
+      "visibility" : true,
+      "expanded" : true
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2"
+}

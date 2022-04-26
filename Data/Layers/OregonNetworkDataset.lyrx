@@ -1,0 +1,229 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "2.9.0",
+  "build" : 32739,
+  "layers" : [
+    "CIMPATH=map/oregonnetworkdataset.xml"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMNetworkDatasetLayer",
+      "name" : "OregonNetworkDataset",
+      "uRI" : "CIMPATH=map/oregonnetworkdataset.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "{52FF5DAF-3325-4286-A52D-2D85B97B9431}"
+      },
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "dataConnection" : {
+        "type" : "CIMFeatureDatasetDataConnection",
+        "featureDataset" : "OregonNetwork",
+        "workspaceConnectionString" : "DATABASE=..\\..\\Projects\\GADEP\\TransportationNetwork.gdb",
+        "workspaceFactory" : "FileGDB",
+        "dataset" : "OregonNetworkDataset",
+        "datasetType" : "esriDTNetworkDataset"
+      },
+      "dirtyAreaRenderer" : {
+        "type" : "CIMNetworkDatasetSimpleRenderer",
+        "label" : "Dirty Areas",
+        "visible" : true,
+        "symbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMPolygonSymbol",
+            "symbolLayers" : [
+              {
+                "type" : "CIMSolidStroke",
+                "enable" : true,
+                "capStyle" : "Round",
+                "joinStyle" : "Round",
+                "lineStyle3D" : "Strip",
+                "miterLimit" : 10,
+                "width" : 3,
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    128,
+                    128,
+                    255,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMSolidFill",
+                "enable" : true,
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    128,
+                    128,
+                    255,
+                    30
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "edgeRenderer" : {
+        "type" : "CIMNetworkDatasetSimpleRenderer",
+        "label" : "Edges",
+        "visible" : true,
+        "symbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMLineSymbol",
+            "symbolLayers" : [
+              {
+                "type" : "CIMSolidStroke",
+                "enable" : true,
+                "capStyle" : "Round",
+                "joinStyle" : "Round",
+                "lineStyle3D" : "Strip",
+                "miterLimit" : 10,
+                "width" : 1,
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    178,
+                    178,
+                    178,
+                    100
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "networkSourceDisplayFilters" : [
+        {
+          "type" : "CIMNetworkSourceDisplayFilter",
+          "networkSource" : "OregonRoads",
+          "visible" : true
+        },
+        {
+          "type" : "CIMNetworkSourceDisplayFilter",
+          "networkSource" : "OregonNetworkDataset_Junctions",
+          "visible" : true
+        }
+      ],
+      "systemJunctionRenderer" : {
+        "type" : "CIMNetworkDatasetSimpleRenderer",
+        "label" : "System Junctions",
+        "symbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMPointSymbol",
+            "symbolLayers" : [
+              {
+                "type" : "CIMVectorMarker",
+                "enable" : true,
+                "anchorPointUnits" : "Relative",
+                "dominantSizeAxis3D" : "Z",
+                "size" : 4,
+                "billboardMode3D" : "FaceNearPlane",
+                "frame" : {
+                  "xmin" : -2,
+                  "ymin" : -2,
+                  "xmax" : 2,
+                  "ymax" : 2
+                },
+                "markerGraphics" : [
+                  {
+                    "type" : "CIMMarkerGraphic",
+                    "geometry" : {
+                      "curveRings" : [
+                        [
+                          [
+                            1.2246467991473532e-16,
+                            2
+                          ],
+                          {
+                            "a" : [
+                              [
+                                1.2246467991473532e-16,
+                                2
+                              ],
+                              [
+                                0,
+                                0
+                              ],
+                              0,
+                              1
+                            ]
+                          }
+                        ]
+                      ]
+                    },
+                    "symbol" : {
+                      "type" : "CIMPolygonSymbol",
+                      "symbolLayers" : [
+                        {
+                          "type" : "CIMSolidFill",
+                          "enable" : true,
+                          "color" : {
+                            "type" : "CIMRGBColor",
+                            "values" : [
+                              128,
+                              128,
+                              128,
+                              100
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "respectFrame" : true
+              }
+            ],
+            "haloSize" : 1,
+            "scaleX" : 1,
+            "angleAlignment" : "Display"
+          }
+        }
+      }
+    }
+  ],
+  "elevationSurfaces" : [
+    {
+      "type" : "CIMMapElevationSurface",
+      "elevationMode" : "BaseGlobeSurface",
+      "name" : "Ground",
+      "verticalExaggeration" : 1,
+      "mapElevationID" : "{52FF5DAF-3325-4286-A52D-2D85B97B9431}",
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth",
+      "visibility" : true,
+      "expanded" : true
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2"
+}
