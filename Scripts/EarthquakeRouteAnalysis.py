@@ -155,11 +155,18 @@ defaultLayerName = "ClosestFacilities" + str(random.randint(100000,999999))
 
 # The incidents, facilities, and barriers that will be used in the analysis
 incidents = arcpy.GetParameter(2)
-incidentsWhereClause = arcpy.GetParameter(3)    # The SQL expression that will filter the incidents feature layer
+incidentsWhereClause = arcpy.GetParameter(3)        # The SQL expression that will filter the incidents feature layer
 facilities = arcpy.GetParameter(4)
-facilitiesWhereClause = arcpy.GetParameter(5)   # The SQL expression that will filter the incidents feature layer
-numberOfFacilities = arcpy.GetParameter(6)      # The number of facilities parameter value 
-overwrite = arcpy.GetParameter(8)               # The checkmark box 
+facilitiesWhereClause = arcpy.GetParameter(5)       # The SQL expression that will filter the incidents feature layer
+numberOfFacilities = arcpy.GetParameter(6)          # The number of facilities parameter value
+overwrite = arcpy.GetParameter(8)                   # The checkmark box 
+
+# Try to onvert the number of facilities parameter to an integer
+try:
+    numberOfFacilities = int(numberOfFacilities)
+# If we can't, then it's not a valid value. Default the value to 1.
+except:
+    numberOfFacilities = 1
 
 # The checkmark box is checked, then the exisitng analysis layer will be overwritten
 # else, a new analysis layer will be created
@@ -220,15 +227,14 @@ closestFacility = arcpy.nax.ClosestFacility(network)
 # Set properties
 closestFacility.travelMode = travelMode                             # The mode of travel
 # The number of facilities the analysis will find for each incident
-closestFacility.defaultTargetFacilityCount = 1 if not numberOfFacilities else int(numberOfFacilities)   
+closestFacility.defaultTargetFacilityCount = 1 if numberOfFacilities == "" else int(numberOfFacilities)
 # Load inputs
 closestFacility.load(arcpy.nax.ClosestFacilityInputDataType.Facilities, facilitiesFiltered)
 closestFacility.load(arcpy.nax.ClosestFacilityInputDataType.Incidents, incidentsFiltered)
 closestFacility.load(arcpy.nax.ClosestFacilityInputDataType.PointBarriers, bridgesFiltered)
 
 # Status message
-message("Running analysis... Finding the nearest {} facilities.".format(numberOfFacilities) if numberOfFacilities > 1 else 
-    "Running analysis... Finding the nearest facilities.".format(numberOfFacilities))
+message("Running analysis... Finding the nearest facilities.".format(numberOfFacilities))
 
 # --------------------------------------------------------------------
 # Solve and export analysis
