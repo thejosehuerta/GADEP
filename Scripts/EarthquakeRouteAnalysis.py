@@ -26,7 +26,7 @@ def name_checker(name):
 # If it is, return a default value, else return the original value
 # --------------------------------------------------------------------
 def analysis_name(parameter, defaultName): 
-    return defaultName if parameter == "" or parameter == " " else name_checker(parameter)
+    return defaultName if parameter == "" or parameter == " " or parameter == "#" else name_checker(parameter)
 
 # --------------------------------------------------------------------
 # This function converts a non-point feature layer to a point feature layer.
@@ -170,15 +170,15 @@ except:
 
 # The checkmark box is checked, then the exisitng analysis layer will be overwritten
 # else, a new analysis layer will be created
-if overwrite:
+if overwrite == True:
     layerName = arcpy.GetParameter(9)
-    output_layer_file = os.path.join(networkAnalysisPath, layerName)
-    arcpy.Delete_management(output_layer_file)
+    outputLayerFile = os.path.join(networkAnalysisPath, layerName)
+    arcpy.Delete_management(outputLayerFile)
 
     message("Exisiting route layer will be overwritten.")
 else:
     layerName = analysis_name(arcpy.GetParameter(7), defaultLayerName)
-    output_layer_file = os.path.join(networkAnalysisPath, layerName)
+    outputLayerFile = os.path.join(networkAnalysisPath, layerName)
     message("New route layer will be created.")
 
 # --------------------------------------------------------------------
@@ -225,9 +225,9 @@ arcpy.nax.MakeNetworkDatasetLayer(network, ndLayerName)
 # Instantiate a ClosestFacility solver object
 closestFacility = arcpy.nax.ClosestFacility(network)
 # Set properties
-closestFacility.travelMode = travelMode                             # The mode of travel
+closestFacility.travelMode = travelMode     # The mode of travel
 # The number of facilities the analysis will find for each incident
-closestFacility.defaultTargetFacilityCount = 1 if numberOfFacilities == "" else int(numberOfFacilities)
+closestFacility.defaultTargetFacilityCount = 1 if numberOfFacilities == "" or numberOfFacilities == "#" else int(numberOfFacilities)
 # Load inputs
 closestFacility.load(arcpy.nax.ClosestFacilityInputDataType.Facilities, facilitiesFiltered)
 closestFacility.load(arcpy.nax.ClosestFacilityInputDataType.Incidents, incidentsFiltered)
@@ -242,7 +242,7 @@ message("Running analysis... Finding the nearest facilities.".format(numberOfFac
 result = closestFacility.solve()
 
 # Export the analysis as a route layer
-result.export(arcpy.nax.ClosestFacilityOutputDataType.Routes, output_layer_file)
+result.export(arcpy.nax.ClosestFacilityOutputDataType.Routes, outputLayerFile)
 
 # Status message
 message("Route analysis successful! Exporting the route layer...")
@@ -250,7 +250,7 @@ message("Route analysis successful! Exporting the route layer...")
 # Add the route layer to the map
 aprx = arcpy.mp.ArcGISProject("CURRENT")
 aprxMap = aprx.listMaps("Map")[0] 
-aprxMap.addDataFromPath(output_layer_file)
+aprxMap.addDataFromPath(outputLayerFile)
 
 # --------------------------------------------------------------------
 # Adjust route layer prperties
