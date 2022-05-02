@@ -3,8 +3,6 @@ import os           # Import os package to be able to get the current directory
 # Import random package
 import random
 
-from numpy import number
-
 # ********************************************************************
 # Helper Functions
 # ********************************************************************
@@ -27,6 +25,17 @@ def name_checker(name):
 # --------------------------------------------------------------------
 def analysis_name(parameter, defaultName): 
     return defaultName if parameter == "" or parameter == " " or parameter == "#" else name_checker(parameter)
+
+# --------------------------------------------------------------------
+# Calculate an array of random RGB values. 
+# --------------------------------------------------------------------
+def random_rgb():
+    r = random.randint(0,255)
+    g = random.randint(0,255)
+    b = random.randint(0,255)
+    # Return RGB array with an alpha value of 100.
+    # The alpha value dictates the color transparency - we don't wan't any transparency.
+    return [r, g, b, 100]
 
 # --------------------------------------------------------------------
 # This function converts a non-point feature layer to a point feature layer.
@@ -170,7 +179,7 @@ except:
 
 # The checkmark box is checked, then the exisitng analysis layer will be overwritten
 # else, a new analysis layer will be created
-if overwrite == True:
+if overwrite:
     layerName = arcpy.GetParameter(9)
     outputLayerFile = os.path.join(networkAnalysisPath, layerName)
     arcpy.Delete_management(outputLayerFile)
@@ -253,15 +262,30 @@ aprxMap = aprx.listMaps("Map")[0]
 aprxMap.addDataFromPath(outputLayerFile)
 
 # --------------------------------------------------------------------
-# Adjust route layer prperties
+# Adjust route layer properties
+# References:
+# https://pro.arcgis.com/en/pro-app/latest/arcpy/mapping/uniquevaluerenderer-class.htm
 # --------------------------------------------------------------------
 # Once the layer is added to the map, adjust its physical properties.
 # Get the layer first.
 lyr = aprxMap.listLayers(layerName)[0]
 # Symbology object with adjustable properties
 sym = lyr.symbology
-# Change the symbol style
-sym.renderer.symbol.applySymbolFromGallery("Marker Arrow Line 3 (Bold)")
+
+# Update the symbology to render a unique color for every unique IncidentOID value
+sym.updateRenderer('UniqueValueRenderer')
+sym.renderer.fields = ['IncidentOID']
+
+# Loop through the groups in the current unique value render.
+for grp in sym.renderer.groups:
+    # Loop through the values in the group items (the group items are the values in the chosen renderer fields)
+    for itm in grp.items:
+        # For each layer:
+        # 1. Change the symbol style
+        itm.symbol.applySymbolFromGallery("Marker Arrow Line 3 (Bold)")
+        # 2. Set a random color to it
+        itm.symbol.outlineColor = {'RGB': random_rgb()}   
+
 # Apply new properties
 lyr.symbology = sym
 
