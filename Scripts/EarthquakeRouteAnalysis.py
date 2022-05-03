@@ -168,7 +168,8 @@ incidentsWhereClause = arcpy.GetParameter(3)        # The SQL expression that wi
 facilities = arcpy.GetParameter(4)
 facilitiesWhereClause = arcpy.GetParameter(5)       # The SQL expression that will filter the incidents feature layer
 numberOfFacilities = arcpy.GetParameter(6)          # The number of facilities parameter value
-overwrite = arcpy.GetParameter(8)                   # The checkmark box 
+analysisName = arcpy.GetParameter(7)                # The analysis name 
+existingAnalysisName = arcpy.GetParameter(8)        # The existing analysis name
 
 # Try to onvert the number of facilities parameter to an integer
 try:
@@ -177,16 +178,21 @@ try:
 except:
     numberOfFacilities = 1
 
-# The checkmark box is checked, then the exisitng analysis layer will be overwritten
-# else, a new analysis layer will be created
-if overwrite:
-    layerName = arcpy.GetParameter(9)
+# Set the current workspace to the "NetworkAnalysis.gdb"
+arcpy.env.workspace = networkAnalysisPath
+# Store the names of the existing route analyses in a list
+existingAnalyses = arcpy.ListFeatureClasses()
+
+# If the existing analysis name parameter value exists in the list of existing analyses, then it will be overwritten.
+# Else, a new layer will be created.
+if existingAnalysisName in existingAnalyses:
+    layerName = existingAnalysisName
     outputLayerFile = os.path.join(networkAnalysisPath, layerName)
     arcpy.Delete_management(outputLayerFile)
 
     message("Exisiting route layer will be overwritten.")
 else:
-    layerName = analysis_name(arcpy.GetParameter(7), defaultLayerName)
+    layerName = analysis_name(analysisName, defaultLayerName)
     outputLayerFile = os.path.join(networkAnalysisPath, layerName)
     message("New route layer will be created.")
 
