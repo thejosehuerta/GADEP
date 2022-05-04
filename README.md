@@ -12,7 +12,7 @@ Using data from the [Fragility Function Viewer](https://clip.engr.oregonstate.ed
 https://user-images.githubusercontent.com/44957830/166630836-89adf62b-30d9-4f1f-91ff-e471f5973254.mp4
 <details>
   <summary>View Description</summary>
-  First, we select a specific bridge and see its damage state of "None" given an earthquake magnitude of 8.1.
+  First, we select a specific bridge and see its damage state of "None" given an earthquake magnitude of 8.1.<p>
   We then open the Disaster Impact tool, select the "Bridges" feature class and an earthquake magnitude of 9.0 as our parameters then click "Run".<p>
   Once the tool finishes running, we're greeted with a success message. We refresh the map then click on the same bridge again and see that its damage state has been updated to "Moderate" given an earthquake magnitude of 9.0.
 </details>
