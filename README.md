@@ -25,6 +25,7 @@ Subsequently, a route analysis can be performed to find optimal routes between t
   * For example, finding routes from *all* schools in Clatsop county to the nearest hospitals in Clatsop county.
 * Finding optimal routes between two sets of points from anywhere to anywhere.
   * For example, finding routes from all points of interest in Clatsop county to the nearest hospitals outside of Clatsop county (e.g., Columbia county).
+* Combinations of the three listed above.
 ### Demonstration
 <details>
   <summary>View Description</summary>
