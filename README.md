@@ -56,10 +56,3 @@ https://user-images.githubusercontent.com/44957830/166812360-78019684-28f2-4e3d-
 
 # Full Documentation
 See the [Wiki](https://github.com/thejosehuerta/GADEP/wiki) for the full documentation on how to get started and more.
-
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/MUQfKFzIOeU" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-
