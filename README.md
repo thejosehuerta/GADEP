@@ -31,6 +31,9 @@ https://user-images.githubusercontent.com/44957830/166812360-78019684-28f2-4e3d-
 <details>
   <summary>View Description</summary>
   
+  <ul>
+    <li>test</>
+  
   * First, we select three different bridges in Seaside, Oregon. They all have a damage state of "None" given an earthquake magnitude of 8.1
   * Then, we select a few hotels that are close to the bridges. These will be our starting points in the route analysis. 
   * Next, we select Seaside Fire Department as this point will be our end point. Selecting these points is not necessary to the analysis; they were only selected to show their attributes.
