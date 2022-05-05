@@ -46,11 +46,12 @@ https://user-images.githubusercontent.com/44957830/166812360-78019684-28f2-4e3d-
     <li>The same feature layer is used as our end points parameter, except now we filter the feature layer to only have fire stations as our end points.</li>
     <li>The number of facilities parameter is how many end points (facilities) will be found for <em>each</em> starting point. We choose one, meaning we want to find only one fire station for each hotel.</li>
     <li>Next, we name our analysis. This name can be anything.</li>
-    <li>We click "Run", then click on "View Details" to view what the tool is doing in the background. <strong>Note:</strong> this video skipped the amount of time it takes to run this tool; it actually took 30 seconds to run.</li>
-    <li>We can then see the exported route layer, titled "HotelsToFireStations", appear on the map with each unique route being a different color.</li>
-    <li>Next, we click and drag the exported route layer lower in the Drawing Order. This lets us see the bridges better.</li>
-    <li>Lastly, we refresh the map and click on the same bridges to see that their damage states have been updated. Any bridges with a damage state of "Slight" or higher will be avoided in the route analysis. Looking at the routes produced, we can see this in effect. <strong>Note:</strong> there are some routes that stray in from outside the current scope of the map, these are routes from hotels that aren't shown on the map.</li>
     </ul>
+  <li>We click "Run", then click on "View Details" to view what the tool is doing in the background. <strong>Note:</strong> this video skipped the amount of time it takes to run this tool; it actually took 30 seconds to run.</li>
+  <li>We can then see the exported route layer, titled "HotelsToFireStations", appear on the map with each unique route being a different color.</li>
+  <li>Next, we click and drag the exported route layer lower in the Drawing Order. This lets us see the bridges better.</li>
+  <li>Lastly, we refresh the map and click on the same bridges to see that their damage states have been updated. Any bridges with a damage state of "Slight" or higher will be avoided in the route analysis. Looking at the routes produced, we can see this in effect. <strong>Note:</strong> there are some routes that stray in from outside the current scope of the map, these are routes from hotels that aren't shown on the map.</li>
+    
   </ul>
 </details>
 
