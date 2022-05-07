@@ -8,7 +8,7 @@ This project seeks to provide decision-making support to emergency managers in c
 This project uses [ArcGIS Pro](https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview) to create custom [geoprocessing tools](https://pro.arcgis.com/en/pro-app/latest/help/analysis/geoprocessing/basics/what-is-geoprocessing-.htm) and utilize existing ones to visually display what infrastructures will be damaged and the type of damage to be expected given a specific earthquake magnitude. This is done by the [Disaster Impact tool](https://github.com/thejosehuerta/GADEP/edit/main/README.md#disaster-impact). Furthermore, the [Disaster Route Analysis tool](https://github.com/thejosehuerta/GADEP/edit/main/README.md#disaster-route-analysis) finds an optimal route between two different sets of points and uses the [Disaster Impact tool](https://github.com/thejosehuerta/GADEP/edit/main/README.md#disaster-impact) to calculate which bridges will be be too badly damaged for emergency personnel to get across safely in order to avoid them.
 ## Disaster Impact
 Using data from the [Fragility Function Viewer](https://clip.engr.oregonstate.edu/), data from [OHELP](https://ohelp.oregonstate.edu/), and shapefiles from [ODOT](https://www.oregon.gov/odot/Data/Pages/GIS-Data.aspx) and [Geofabrik](https://download.geofabrik.de/north-america/us/oregon.html), disaster impact on different infrastructures given a specific earthquake magnitude is calculated. These calculations result in a damage state which signifies what type of damage an infrastructure is more likely to receive.
-### Demonstration
+### Demonstration (No Sound)
 https://user-images.githubusercontent.com/44957830/166630836-89adf62b-30d9-4f1f-91ff-e471f5973254.mp4
 <details>
   <summary>View Description</summary>
@@ -30,7 +30,7 @@ Subsequently, a route analysis can be performed to find optimal routes between t
 * Finding optimal routes between two sets of points from anywhere to anywhere.
   * For example, finding routes from all points of interest in Clatsop county to the nearest hospitals outside of Clatsop county (e.g., Columbia county).
 
-### Demonstration
+### Demonstration (No Sound)
 https://user-images.githubusercontent.com/44957830/166812360-78019684-28f2-4e3d-a340-45ff05aa04ac.mp4
 <details>
   <summary>View Description</summary>
