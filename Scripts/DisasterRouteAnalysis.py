@@ -69,14 +69,14 @@ def feature_to_point(inFeature, outFeature):
 # --------------------------------------------------------------------
 # First, we'll calculate the exceedance probability values of the bridges.
 # Get the current directory of the script; it should look something like the following:
-# {YOUR LOCAL DRIVE}\{OTHER FOLDERS}\GADEP Project\Scripts
+# {YOUR LOCAL DRIVE}\{OTHER FOLDERS}\GADEP\Scripts
 scriptsPath = os.getcwd()
 
 # However, we want to get the parent directory of the script. We'll get something like this:
-# {YOUR LOCAL DRIVE}\{OTHER FOLDERS}\GADEP Project
+# {YOUR LOCAL DRIVE}\{OTHER FOLDERS}\GADEP
 # Then, in the same line, we compose a new directory.
 # The resulting directory will look something like this:
-# {YOUR LOCAL DRIVE}\{OTHER FOLDERS}\GADEP Project\Projects\GADEP
+# {YOUR LOCAL DRIVE}\{OTHER FOLDERS}\GADEP\Projects\GADEP
 projectPath = os.path.join(os.path.dirname(scriptsPath), "Projects", "GADEP")
 
 # Now that we have the main project path stored as a variable, we can use it to 

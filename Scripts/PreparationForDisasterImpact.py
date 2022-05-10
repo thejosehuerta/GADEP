@@ -42,7 +42,7 @@ def xlookup(lookup_value, lookup_array, return_array, if_not_found:str = ''):
 # Setting directories
 # --------------------------------------------------------------------
 # Get the current directory of the script; it should look something like the following:
-# {YOUR LOCAL DRIVE}\{OTHER FOLDERS}\GADEP Project\Scripts
+# {YOUR LOCAL DRIVE}\{OTHER FOLDERS}\GADEP\Scripts
 scriptsPath = os.getcwd()
 
 infrastructuresPath = os.path.join(os.path.dirname(scriptsPath), "Projects", "GADEP", "Infrastructures.gdb")
