@@ -105,8 +105,8 @@ def lognormal_cdf(IM, med, std) -> float:
 # Normal Distribution 
 # Reference: https://python.plainenglish.io/probability-distributions-with-python-discrete-continuous-1a11d7c8d717
 # --------------------------------------------------------------------
-def normal_cdf(x: float, med: float = 0, std: float = 1) -> float:
-    return (1 + math.erf((x - float(med)) / math.sqrt(2) / float(std))) / 2
+def normal_cdf(IM, med, std) -> float:
+    return (1 + math.erf((IM - float(med)) / math.sqrt(2) / float(std))) / 2
 
 # --------------------------------------------------------------------
 # Discrete Distribution Function  
