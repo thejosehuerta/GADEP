@@ -1,6 +1,5 @@
 from cmath import acos
 import arcpy
-from numpy import short
 import pandas
 import os
 import math
