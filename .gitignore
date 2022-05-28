@@ -1,3 +1,8 @@
 
 *.lock
 UpdateDamageValues.py
+test.py
+AddFields.py
+DataExtractor.py
+OSMDataSeparator.py
+
