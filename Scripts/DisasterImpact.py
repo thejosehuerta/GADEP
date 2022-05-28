@@ -99,7 +99,7 @@ def damage_states(fdDict, fragNo, numberOfStates, IM):
 # Reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.lognorm.html
 # --------------------------------------------------------------------
 def lognormal_cdf(IM, med, std) -> float:
-    return lognorm.cdf(IM, s = float(std),scale = exp(log(float(med))))
+    return lognorm.cdf(IM, float(std), scale = exp(log(float(med))))
 
 # --------------------------------------------------------------------
 # Normal Distribution 
@@ -111,7 +111,7 @@ def normal_cdf(IM, med, std) -> float:
 # --------------------------------------------------------------------
 # Discrete Distribution Function  
 # --------------------------------------------------------------------
-def discrete(IM, med, std):
+def discrete(IM, med, std) -> float:
     # For discrete distributions, med and std are strings of values concatenated together where
     # the median acts as the IM values (e.g. PGA), and the std acts as the EP values (the values we want).
     # However, since these are fixed values and we want to be able to use any value we want as the IM, we'll
@@ -128,7 +128,7 @@ def discrete(IM, med, std):
     if IM < x[0]:
         IM = x[0]
 
-    # Use interpolate function to take in float arrays and develop a function
+    # Use interpolate function to take in float arrays and develop a function.
     # The fill_value is set to “extrapolate”, which means we can calculate points outside the data range.
     linearInterpolation = interpolate.interp1d(x, y, fill_value='extrapolate')
 
@@ -138,7 +138,7 @@ def discrete(IM, med, std):
 # --------------------------------------------------------------------
 # Polynomial Distribution Function 
 # --------------------------------------------------------------------
-def polynomial(IM, polynomial, IMDesc, D = 1):
+def polynomial(IM, polynomial, IMDesc, D = 1) -> float:
     # For polynomial distributions, there are formulas already written for us in the database under the
     # 'Fragility_polynomial' column. We take this formula (which is a string), and replace the IM description (e.g., PGA, PGV, etc.)
     # in this formula with the IM value given by the user.
@@ -149,8 +149,8 @@ def polynomial(IM, polynomial, IMDesc, D = 1):
     # feature that will need to be added. In the meantime, D is defaulted to 1 so the program doesn't return an error if it's called. 
     # Lastly, we use the eval function to evaluate this string as a python arithmetic and voila, we get our EP value.
 
-    # Cast D paramter to string and wrap it in parantheses
-    # Some formulas use log, therefore, we want to make sure the D paramter is wrapped in parantheses
+    # Cast D parameter to string and wrap it in parantheses.
+    # Some formulas use log, therefore, we want to make sure the D parameter is wrapped in parentheses.
     D = "(" + str(D) + ")"
 
     # Store the new string with the updated IM value in a temporary variable
